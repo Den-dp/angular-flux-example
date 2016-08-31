@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular FLux Example</title>
+</head>
+<body>
+
+<h1>Cart</h1>
+<table ng-controller="CartController as cart">
+    <tr ng-repeat="item in cart.items track by $id(item)">
+        <td>{{item.catalogItem.title}}</td>
+        <td>{{item.qty}}</td>
+        <td>
+            <button ng-click="cart.removeItem(item)">x</button>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
