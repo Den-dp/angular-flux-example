@@ -2,8 +2,8 @@ import {module} from 'angular';
 import {EventEmitter} from './EventEmitter';
 import {CatalogController} from './CatalogController';
 import {CartController} from './CartController';
-import {cartActions} from './CartActions';
-import {cartStore, catalogItems} from './CartStore';
+import {cartActions} from './actions/CartActions';
+import {cartStore, catalogItems} from './stores/CartStore';
 
 module('cart', [])
     .controller('CatalogCtrl', CatalogController)
